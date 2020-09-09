@@ -11,6 +11,7 @@ from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_v1_5
 from base64 import b64decode
 
+print ("hello")
 key = open("/path/to/keyPair/key.pem").read()
 key = key.replace("-----BEGIN RSA PRIVATE KEY-----", "").replace("-----END RSA PRIVATE KEY-----", "").replace("\n", "")
 key = b64decode(key)
